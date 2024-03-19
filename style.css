@@ -1,0 +1,99 @@
+* {
+  font-family: "Source Serif 4", serif;
+}
+
+body {
+  background: url('./images/background.png');
+  color: #A54328;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-inline: auto ;
+  max-width: 20rem;
+  padding: 3.5rem 2.5rem;
+}
+
+h1, h2 {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+img {
+  margin-block: 2rem;
+  width: 100%;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+ul {
+  margin-bottom: 2rem;
+}
+
+ul > li {
+  list-style: disc;
+}
+
+ol > li {
+  list-style: decimal;
+}
+
+button {
+  background: #A54328;
+  border: none;
+  border-radius: 0.4rem;
+  color: #FFF;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 2rem;
+  padding: 0.5rem 0.75rem;
+  transition: all ease-in-out 500ms;
+}
+
+button:hover {
+  background: #85321b;
+  transition: all ease-in-out 500ms;
+}
+
+@media (min-width: 1120px) {
+  body {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  main {
+    flex-direction: row;
+    gap: 10rem;
+    margin-top: 5.6rem;
+    max-width: fit-content;
+  }
+
+  .recipe {
+    max-width: 27rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .ingredients {
+    max-width: 33rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    padding: 0.6rem 1.25rem;
+  }
+}
